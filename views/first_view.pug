@@ -1,0 +1,18 @@
+doctype html 
+html 
+   head 
+      title Hello MG 
+   body 
+      h1(style="color:green") Welcome All!! 
+      p(style="color:green") List of Users
+      table(border="2" cellpadding ="10")
+       thead 
+            th FullName 
+            th Email  
+            th Mobile 
+       if allstudents.length!=0
+            each val in allstudents
+               tr 
+                  td #{val.Name}
+                  td #{val.email}
+                  td #{val.mobile}
